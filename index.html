@@ -7,10 +7,55 @@
     <title>建築構造の薄い本</title>
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tree-menu.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/tree-menu.js"></script>   
+
+    <style>
+    <!--
+    #container {
+        white-space: nowrap;
+    }
+    #menu-frame {
+        float: left;
+        width: 160px;
+        height: 600px;
+        margin: 0;
+        border: 1px solid gray;
+        font-family: "Meiryo UI", "メイリオ", "MS UI Gothic"; "ヒラギノ角ゴシック";
+    }
+    #main-frame {
+        width: 760px;
+        height: 600px;
+        margin: 0;
+        border: 1px solid gray;
+    }
+    -->
+    </style>
+    <base target="main-frame">
+
   </head>
   <body>
-    <h1>建築構造の薄い本 - Kenchiku thin book -</h1>
+    <div class="page-header"><h1>建築構造の薄い本</h1></div>
+    <div id="container">
+      <div id="menu-frame">
+        <ul class="tree-menu">
+          <li><a href="#">あ</a>
+            <ul>
+              <li><a href="#">あ</a></li>
+            </ul>
+          </li>
+          <li><a href="#">か</a>
+            <ul>
+              <li><a href="#">か</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <iframe id="main-frame" name="main-frame">
+      </iframe>
+    </div>
   </body>
 </html>
