@@ -1,0 +1,24 @@
+<head><meta charset='utf-8'></head><body><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../css/markdown.css" type="text/css" />
+</head>
+<body>
+<h1 id="壁エレメントモデル">壁エレメントモデル</h1>
+<hr />
+<h2 id="壁エレメントモデルとは">壁エレメントモデルとは？</h2>
+<p>壁エレメントモデルは一般によく用いられる耐震壁のモデル化方法である。耐震壁は付帯柱と壁板からなる。壁板部分は線材としてモデル化し、壁板上下に対して剛な梁を配置する。さらに、付帯柱は両端をピンとしてモデル化する。 これが壁エレメントモデルの基本的な考え方となる。 他のモデル化としてブレース置換がよく知られる。ブレース置換は壁板の剛性を水平剛性が等価なブレースに置換する方法である。水平剛性のみを合わせるため、軸剛性や曲げ剛性については整合しないという欠点がある。</p>
+<hr />
+<h2 id="モデルの特徴">モデルの特徴</h2>
+<p>付帯柱をピンにするため、付帯柱はせん断力を負担しない。したがって、壁板部分には付帯柱も含めたせん断剛性が設定される必要がある。 一方、軸力については付帯柱も負担する。したがって、耐震壁の曲げといった場合には壁板のモーメントに加え、付帯柱の引張、圧縮によるモーメントも含んで考える事が必要になる。</p>
+<hr />
+<h2 id="付帯柱の軸力負担">付帯柱の軸力負担</h2>
+<p>付帯柱の設計時には付帯柱と壁板がどの程度軸力を分担し合うかという点も判断がわかれる。壁板も断面積比率で軸力を受けると考えると付帯柱の長期軸力は小さくなる。設計としては柱に取って危険側になる可能性がある。 一方で壁が軸力を負担しないと早期に壁板に曲げ降伏が発生するという側面もあるため、判断が必要となる。</p>
+</body>
+</html>
+</body>
