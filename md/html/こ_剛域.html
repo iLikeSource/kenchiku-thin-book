@@ -1,0 +1,25 @@
+<head><meta charset='utf-8'></head><body><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../css/markdown.css" type="text/css" />
+</head>
+<body>
+<h1 id="剛域">剛域</h1>
+<hr />
+<h2 id="剛域とは">剛域とは？</h2>
+<p>柱梁接合部は部材が集まっているため、部材中間より相対的に剛に近い挙動となる。通常建築構造のモデルは線材としてモデル化されるため、材全体にわたって均一な剛性となる。そのため接合部の条件を考慮できず、現実よりも柔らか目に扱われる。そこで、部材端に剛と見なす部分を設けることで現実に近づけようとしたモデル化が剛域である。また、部材全長から剛域部の長さを減じた長さを可撓(かとう)長さという。</p>
+<div class="figure">
+<img src="image/RigidZone.bmp" />
+
+</div>
+<hr />
+<h2 id="実務上の取り扱い">実務上の取り扱い</h2>
+<p>実務においてはS造とRC造で取り扱いが異なり、Sでは剛域を設けず、RCでは部材面からD/4接合部に入った位置(Dは剛域を設ける部材のせい。つまり梁の場合は取りつく柱せい/2-梁せい/4)までを剛域と見なすことが一般的。</p>
+</body>
+</html>
+</body>
